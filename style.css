@@ -1,0 +1,15 @@
+.cont {
+    background-color: cadetblue;
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-template-rows: 2fr 2fr 2fr;
+}
+
+/* .grid {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-template-rows: 2fr 2fr 2fr;
+
+    
+
+} */
