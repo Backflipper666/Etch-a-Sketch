@@ -1,15 +1,40 @@
-.cont {
-    background-color: cadetblue;
-    display: grid;
-    grid-template-columns: 2fr 2fr 2fr;
-    grid-template-rows: 2fr 2fr 2fr;
+html {
+    position: relative;
+    min-height: 100%;
+    box-sizing: border-box;
 }
 
-/* .grid {
+.cont {
+    padding: 1px;
+    background-color: cadetblue;
     display: grid;
-    grid-template-columns: 2fr 2fr 2fr;
-    grid-template-rows: 2fr 2fr 2fr;
-
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(16, 1fr);
+    justify-items:stretch;
     
+    gap: 1px;
+    box-sizing: border-box;
+    height: 600px;
+    width: 600px;
+    flex: 1 1 100%;
+    margin-top: auto;
+    box-shadow: rgb(8, 8, 8);
+}
 
+
+.grid {
+/*     width: 20px;
+    height: 20px; */
+    background-color: coral;
+    align-self:stretch;
+    padding: 10px 10px;
+    box-sizing: border-box;
+
+}
+
+.new {
+    background-color: violet;
+}
+/* .grid:hover {
+    background-color: yellow;
 } */
