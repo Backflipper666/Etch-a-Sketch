@@ -1,26 +1,14 @@
-let btnClear = document.createElement("button");
-btnClear.classList.add("buttonClear");
-btnClear.textContent = "Clear";
-document.body.appendChild(btnClear);
-
-let container = document.createElement("div");
-container.classList.add('cont');
-document.body.appendChild(container);
-
-
-
-
-for (let i = 0; i < 256; i++) {
+let wrap = document.getElementById("wrap");
+let table = document.getElementById("table");
+let input = parseInt(prompt("Enter size of the grid, e.g. 16, 7"));
+let squared = Math.pow(input, 2);
+console.log(table, wrap);
+for (let i = 0; i < squared; i++) {
     let div = document.createElement("div");
     div.classList.add("grid");
-    div.textContent = "";
-    container.appendChild(div);
-    div.addEventListener("pointerenter", e => {
-        /* div.classList.add("new"); */
-       
-        div.classList.add("new");
-    })
-    btnClear.addEventListener("click", (e) => {
-        div.classList.remove("new");
-    })
+    div.textContent = "a";
+    table.appendChild(div);
 }
+
+table.setAttribute("style", "display: grid; grid-template-columns: repeat(input, 1fr);")
+
